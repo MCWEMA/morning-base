@@ -58,7 +58,7 @@ const Connection: React.FC = () => (
             <PostFullContent className="post-full-content">
               <div className="post-content">
                 <h5>
-                  A starter template for Gatsby <br /> GitHub: <a href="https://github.com/MCWEMA/morning-walk-base"> MCWEMA/morning-walk-base</a>
+                  A starter template for Gatsby <br /> GitHub: <a href="https://github.com/MCWEMA/morning-base"> morning-base</a>
                 </h5>
 
                 <p> Feel free to Connect </p>

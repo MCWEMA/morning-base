@@ -4,8 +4,8 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'Morning Walk',
-    description: 'A Blog about personal morning walk in Orleans. The site is based on a port of the casper blog built for gatsby',
-    siteUrl: 'https://github.com/MCWEMA/morning-walk-vercel', // full path to blog - no ending slash
+    description: 'A Blog about personal morning walk. The site is based on a port of the casper blog built for gatsby',
+    siteUrl: 'https://github.com/MCWEMA/morning-base', // full path to blog - no ending slash
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
@@ -113,8 +113,6 @@ module.exports = {
                         author{
                           id
                           bio
-
-
                         }
                       }
                     }

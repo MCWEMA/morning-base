@@ -2,6 +2,7 @@ export interface WebsiteConfig {
   title: string;
   titleshort: string;
   description: string;
+  subdescription: string;
   coverImage?: string;
   logo: string;
   /**
@@ -50,9 +51,10 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'Morning Walk bases',
-  titleshort: 'Morning bases',
-  description: 'A quiet daily morning discovery walk',
+  title: 'Morning base',
+  titleshort: 'Morning base',
+  description: 'A quiet daily morning discovery',
+  subdescription: 'A Gatsby Site Demo',
   coverImage: 'img/blog-cover.png',
   logo: 'Wema-Logos/Wemalabs-35-bg.png',
   lang: 'en',

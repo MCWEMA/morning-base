@@ -17,6 +17,7 @@ import {
   PostFeed,
   Posts,
   SiteDescription,
+  SiteSubDescription,
   SiteHeader,
   SiteHeaderContent,
   SiteMain,
@@ -112,6 +113,7 @@ const IndexPage: React.FC<IndexProps> = props => {
                 )}
               </SiteTitle>
               <SiteDescription>{config.description}</SiteDescription>
+              <SiteSubDescription>{config.subdescription}</SiteSubDescription>
             </SiteHeaderContent>
           </div>
         </div>

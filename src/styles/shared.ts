@@ -61,6 +61,19 @@ export const SiteDescription = styled.h2`
     font-size: 1.8rem;
   }
 `;
+export const SiteSubDescription = styled.h2`
+  z-index: 10;
+  margin: 0;
+  padding: 5px 0;
+  font-size: 2.rem;
+  line-height: 1.2em;
+  font-weight: 400;
+  opacity: 0.8;
+
+  @media (max-width: 500px) {
+    font-size: 1.8rem;
+  }
+`;
 
 export const Posts = css`
   overflow-x: hidden;

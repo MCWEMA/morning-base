@@ -58,7 +58,7 @@ const About: React.FC = () => (
             <PostFullContent className="post-full-content">
               <div className="post-content">
                 <h5>
-                  A Gatsby template using <br /> GitHub/MCWEMA/ <a href="https://github.com/MCWEMA/morning-walk-vercel"> Morning Walk</a>
+                  A Gatsby 4 template <br />  <a href="https://github.com/MCWEMA/morning-base"> GitHub Repo </a>
                 </h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo finibus leo,

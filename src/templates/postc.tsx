@@ -270,6 +270,7 @@ const PostTemplate = css`
 export const PostFull = css`
   position: relative;
   z-index: 50;
+  text-align: justify;
 `;
 
 export const NoImage = css`
