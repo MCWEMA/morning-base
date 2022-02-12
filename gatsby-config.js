@@ -110,7 +110,12 @@ module.exports = {
                       frontmatter {
                         title
                         date
-                        author
+                        author{
+                          id
+                          bio
+
+
+                        }
                       }
                     }
                   }
