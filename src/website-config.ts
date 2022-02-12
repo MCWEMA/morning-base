@@ -50,13 +50,13 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'Morning Walk',
-  titleshort: 'Morning',
-  description: 'A quiet daily morning walk discovery',
+  title: 'Morning Walk bases',
+  titleshort: 'Morning bases',
+  description: 'A quiet daily morning discovery walk',
   coverImage: 'img/blog-cover.png',
   logo: 'Wema-Logos/Wemalabs-35-bg.png',
   lang: 'en',
-  siteUrl: 'https://morning-walks.vercel.app/',
+  siteUrl: 'https://morning-base.vercel.app/',
   facebook: 'https://www.facebook.com/ghost',
   twitter: 'https://twitter.com/tryghost',
   showSubscribe: false,
