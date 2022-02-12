@@ -1,0 +1,1055 @@
+{
+  "added": 0,
+  "removed": 0,
+  "changed": 0,
+  "audited": 2066,
+  "funding": 309,
+  "audit": {
+    "auditReportVersion": 2,
+    "vulnerabilities": {
+      "@gatsbyjs/webpack-hot-middleware": {
+        "name": "@gatsbyjs/webpack-hot-middleware",
+        "severity": "high",
+        "via": [
+          "ansi-html"
+        ],
+        "effects": [
+          "gatsby"
+        ],
+        "range": "*",
+        "nodes": [
+          "node_modules/@gatsbyjs/webpack-hot-middleware"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "@graphql-tools/url-loader": {
+        "name": "@graphql-tools/url-loader",
+        "severity": "moderate",
+        "via": [
+          "ws"
+        ],
+        "effects": [],
+        "range": "6.4.1-alpha-0ea0f8b7.0 - 6.10.1",
+        "nodes": [
+          "node_modules/@graphql-tools/url-loader"
+        ],
+        "fixAvailable": true
+      },
+      "@pmmmwh/react-refresh-webpack-plugin": {
+        "name": "@pmmmwh/react-refresh-webpack-plugin",
+        "severity": "high",
+        "via": [
+          "ansi-html"
+        ],
+        "effects": [
+          "gatsby"
+        ],
+        "range": "<=0.5.0-rc.6",
+        "nodes": [
+          "node_modules/@pmmmwh/react-refresh-webpack-plugin"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "ansi-html": {
+        "name": "ansi-html",
+        "severity": "high",
+        "via": [
+          {
+            "source": 1002522,
+            "name": "ansi-html",
+            "dependency": "ansi-html",
+            "title": "Uncontrolled Resource Consumption in ansi-html",
+            "url": "https://github.com/advisories/GHSA-whgm-jr23-g3j9",
+            "severity": "high",
+            "range": "<=0.0.7"
+          }
+        ],
+        "effects": [
+          "@gatsbyjs/webpack-hot-middleware",
+          "@pmmmwh/react-refresh-webpack-plugin"
+        ],
+        "range": "*",
+        "nodes": [
+          "node_modules/ansi-html"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "ansi-regex": {
+        "name": "ansi-regex",
+        "severity": "moderate",
+        "via": [
+          {
+            "source": 1002401,
+            "name": "ansi-regex",
+            "dependency": "ansi-regex",
+            "title": " Inefficient Regular Expression Complexity in chalk/ansi-regex",
+            "url": "https://github.com/advisories/GHSA-93q8-gq69-wqmw",
+            "severity": "moderate",
+            "range": ">2.1.1 <5.0.1"
+          }
+        ],
+        "effects": [
+          "strip-ansi"
+        ],
+        "range": ">2.1.1 <5.0.1",
+        "nodes": [
+          "node_modules/gatsby-cli/node_modules/ansi-regex",
+          "node_modules/gatsby/node_modules/ansi-regex",
+          "node_modules/wide-align/node_modules/ansi-regex",
+          "node_modules/yurnalist/node_modules/ansi-regex"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "base": {
+        "name": "base",
+        "severity": "high",
+        "via": [
+          "cache-base"
+        ],
+        "effects": [
+          "snapdragon"
+        ],
+        "range": ">=0.7.0",
+        "nodes": [
+          "node_modules/base"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "bin-version": {
+        "name": "bin-version",
+        "severity": "moderate",
+        "via": [
+          "find-versions"
+        ],
+        "effects": [
+          "bin-version-check"
+        ],
+        "range": "<=4.0.0",
+        "nodes": [
+          "node_modules/bin-version"
+        ],
+        "fixAvailable": {
+          "name": "pngquant",
+          "version": "0.2.0",
+          "isSemVerMajor": true
+        }
+      },
+      "bin-version-check": {
+        "name": "bin-version-check",
+        "severity": "moderate",
+        "via": [
+          "bin-version"
+        ],
+        "effects": [
+          "bin-wrapper"
+        ],
+        "range": "<=4.0.0",
+        "nodes": [
+          "node_modules/bin-version-check"
+        ],
+        "fixAvailable": {
+          "name": "pngquant",
+          "version": "0.2.0",
+          "isSemVerMajor": true
+        }
+      },
+      "bin-wrapper": {
+        "name": "bin-wrapper",
+        "severity": "moderate",
+        "via": [
+          "bin-version-check"
+        ],
+        "effects": [
+          "pngquant-bin"
+        ],
+        "range": ">=0.4.0",
+        "nodes": [
+          "node_modules/bin-wrapper"
+        ],
+        "fixAvailable": {
+          "name": "pngquant",
+          "version": "0.2.0",
+          "isSemVerMajor": true
+        }
+      },
+      "braces": {
+        "name": "braces",
+        "severity": "high",
+        "via": [
+          "snapdragon"
+        ],
+        "effects": [],
+        "range": "2.0.0 - 2.3.2",
+        "nodes": [
+          "node_modules/braces"
+        ],
+        "fixAvailable": true
+      },
+      "browserslist": {
+        "name": "browserslist",
+        "severity": "moderate",
+        "via": [
+          {
+            "source": 1002655,
+            "name": "browserslist",
+            "dependency": "browserslist",
+            "title": "Regular Expression Denial of Service in browserslist",
+            "url": "https://github.com/advisories/GHSA-w8qv-6jwh-64r5",
+            "severity": "moderate",
+            "range": ">=4.0.0 <4.16.5"
+          }
+        ],
+        "effects": [
+          "react-dev-utils"
+        ],
+        "range": "4.0.0 - 4.16.4",
+        "nodes": [
+          "node_modules/react-dev-utils/node_modules/browserslist"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "cache-base": {
+        "name": "cache-base",
+        "severity": "high",
+        "via": [
+          "set-value",
+          "union-value"
+        ],
+        "effects": [
+          "base"
+        ],
+        "range": ">=0.7.0",
+        "nodes": [
+          "node_modules/cache-base"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "color": {
+        "name": "color",
+        "severity": "moderate",
+        "via": [
+          "color-string"
+        ],
+        "effects": [
+          "css-color-function"
+        ],
+        "range": "<=0.11.4",
+        "nodes": [
+          "node_modules/css-color-function/node_modules/color"
+        ],
+        "fixAvailable": false
+      },
+      "color-string": {
+        "name": "color-string",
+        "severity": "moderate",
+        "via": [
+          {
+            "source": 1002581,
+            "name": "color-string",
+            "dependency": "color-string",
+            "title": "Regular Expression Denial of Service (ReDOS)",
+            "url": "https://github.com/advisories/GHSA-257v-vj4p-3w2h",
+            "severity": "moderate",
+            "range": "<1.5.5"
+          }
+        ],
+        "effects": [
+          "color"
+        ],
+        "range": "<1.5.5",
+        "nodes": [
+          "node_modules/css-color-function/node_modules/color-string"
+        ],
+        "fixAvailable": false
+      },
+      "css-color-function": {
+        "name": "css-color-function",
+        "severity": "moderate",
+        "via": [
+          "color"
+        ],
+        "effects": [
+          "postcss-color-function"
+        ],
+        "range": "*",
+        "nodes": [
+          "node_modules/css-color-function"
+        ],
+        "fixAvailable": false
+      },
+      "css-select": {
+        "name": "css-select",
+        "severity": "moderate",
+        "via": [
+          "nth-check"
+        ],
+        "effects": [
+          "svgo"
+        ],
+        "range": "<=3.1.0",
+        "nodes": [
+          "node_modules/css-select"
+        ],
+        "fixAvailable": {
+          "name": "gatsby-plugin-sharp",
+          "version": "2.0.30",
+          "isSemVerMajor": true
+        }
+      },
+      "expand-brackets": {
+        "name": "expand-brackets",
+        "severity": "high",
+        "via": [
+          "snapdragon"
+        ],
+        "effects": [],
+        "range": "1.0.0 - 2.1.4",
+        "nodes": [
+          "node_modules/expand-brackets"
+        ],
+        "fixAvailable": true
+      },
+      "extglob": {
+        "name": "extglob",
+        "severity": "high",
+        "via": [
+          "snapdragon"
+        ],
+        "effects": [],
+        "range": "1.0.0 - 2.0.4",
+        "nodes": [
+          "node_modules/extglob"
+        ],
+        "fixAvailable": true
+      },
+      "find-versions": {
+        "name": "find-versions",
+        "severity": "moderate",
+        "via": [
+          "semver-regex"
+        ],
+        "effects": [
+          "bin-version"
+        ],
+        "range": "<=3.2.0",
+        "nodes": [
+          "node_modules/find-versions"
+        ],
+        "fixAvailable": {
+          "name": "pngquant",
+          "version": "0.2.0",
+          "isSemVerMajor": true
+        }
+      },
+      "fork-ts-checker-webpack-plugin": {
+        "name": "fork-ts-checker-webpack-plugin",
+        "severity": "high",
+        "via": [
+          "micromatch"
+        ],
+        "effects": [
+          "react-dev-utils"
+        ],
+        "range": "0.4.14 - 4.1.6",
+        "nodes": [
+          "node_modules/fork-ts-checker-webpack-plugin"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "gatsby": {
+        "name": "gatsby",
+        "severity": "high",
+        "via": [
+          "@gatsbyjs/webpack-hot-middleware",
+          "@pmmmwh/react-refresh-webpack-plugin",
+          "gatsby-cli",
+          "react-dev-utils",
+          "strip-ansi"
+        ],
+        "effects": [],
+        "range": "2.3.24-ink.60 - 2.3.24-ink.61 || 2.4.0-0 - 2.4.0-alpha.3 || >=2.6.0-alpha.1",
+        "nodes": [
+          "node_modules/gatsby"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "gatsby-cli": {
+        "name": "gatsby-cli",
+        "severity": "moderate",
+        "via": [
+          "gatsby-recipes",
+          "strip-ansi"
+        ],
+        "effects": [
+          "gatsby"
+        ],
+        "range": "2.5.9-ink.60 - 2.5.9-ink.61 || >=2.6.0-0",
+        "nodes": [
+          "node_modules/gatsby-cli"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "gatsby-plugin-sharp": {
+        "name": "gatsby-plugin-sharp",
+        "severity": "moderate",
+        "via": [
+          "svgo"
+        ],
+        "effects": [],
+        "range": ">=2.0.31",
+        "nodes": [
+          "node_modules/gatsby-plugin-sharp"
+        ],
+        "fixAvailable": {
+          "name": "gatsby-plugin-sharp",
+          "version": "2.0.30",
+          "isSemVerMajor": true
+        }
+      },
+      "gatsby-recipes": {
+        "name": "gatsby-recipes",
+        "severity": "high",
+        "via": [
+          "graphql-compose",
+          "remark-parse"
+        ],
+        "effects": [
+          "gatsby-cli"
+        ],
+        "range": "0.0.7-unifiedroutes.76 - 0.0.7-unifiedroutes-v2.135 || >=0.1.31",
+        "nodes": [
+          "node_modules/gatsby-recipes"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "gatsby-transformer-remark": {
+        "name": "gatsby-transformer-remark",
+        "severity": "moderate",
+        "via": [
+          "sanitize-html"
+        ],
+        "effects": [],
+        "range": "*",
+        "nodes": [
+          "node_modules/gatsby-transformer-remark"
+        ],
+        "fixAvailable": false
+      },
+      "gatsby-transformer-yaml": {
+        "name": "gatsby-transformer-yaml",
+        "severity": "moderate",
+        "via": [
+          "unist-util-select"
+        ],
+        "effects": [],
+        "range": ">=1.5.3",
+        "nodes": [
+          "node_modules/gatsby-transformer-yaml"
+        ],
+        "fixAvailable": {
+          "name": "gatsby-transformer-yaml",
+          "version": "1.0.1",
+          "isSemVerMajor": true
+        }
+      },
+      "graphql-compose": {
+        "name": "graphql-compose",
+        "severity": "moderate",
+        "via": [
+          "object-path"
+        ],
+        "effects": [
+          "gatsby-recipes"
+        ],
+        "range": "0.1.0 - 1.5.1 || 7.24.1 - 9.0.2",
+        "nodes": [
+          "node_modules/graphql-compose"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "immer": {
+        "name": "immer",
+        "severity": "critical",
+        "via": [
+          {
+            "source": 1002492,
+            "name": "immer",
+            "dependency": "immer",
+            "title": "Prototype Pollution in immer",
+            "url": "https://github.com/advisories/GHSA-33f9-j839-rf8h",
+            "severity": "critical",
+            "range": "<9.0.6"
+          }
+        ],
+        "effects": [
+          "react-dev-utils"
+        ],
+        "range": "<9.0.6",
+        "nodes": [
+          "node_modules/immer"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "meow": {
+        "name": "meow",
+        "severity": "high",
+        "via": [
+          "trim-newlines"
+        ],
+        "effects": [],
+        "range": "3.4.0 - 5.0.0",
+        "nodes": [
+          "node_modules/meow"
+        ],
+        "fixAvailable": true
+      },
+      "micromatch": {
+        "name": "micromatch",
+        "severity": "high",
+        "via": [
+          "snapdragon"
+        ],
+        "effects": [
+          "fork-ts-checker-webpack-plugin"
+        ],
+        "range": "3.0.0 - 3.1.10",
+        "nodes": [
+          "node_modules/micromatch"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "nanomatch": {
+        "name": "nanomatch",
+        "severity": "high",
+        "via": [
+          "snapdragon"
+        ],
+        "effects": [],
+        "range": ">=0.1.1",
+        "nodes": [
+          "node_modules/nanomatch"
+        ],
+        "fixAvailable": true
+      },
+      "nth-check": {
+        "name": "nth-check",
+        "severity": "moderate",
+        "via": [
+          {
+            "source": 1002423,
+            "name": "nth-check",
+            "dependency": "nth-check",
+            "title": "Inefficient Regular Expression Complexity in nth-check",
+            "url": "https://github.com/advisories/GHSA-rp65-9cf3-cjxr",
+            "severity": "moderate",
+            "range": "<2.0.1"
+          }
+        ],
+        "effects": [
+          "css-select",
+          "unist-util-select"
+        ],
+        "range": "<2.0.1",
+        "nodes": [
+          "node_modules/css-select/node_modules/nth-check",
+          "node_modules/unist-util-select/node_modules/nth-check"
+        ],
+        "fixAvailable": {
+          "name": "gatsby-transformer-yaml",
+          "version": "1.0.1",
+          "isSemVerMajor": true
+        }
+      },
+      "object-path": {
+        "name": "object-path",
+        "severity": "high",
+        "via": [
+          {
+            "source": 1002424,
+            "name": "object-path",
+            "dependency": "object-path",
+            "title": "Prototype Pollution in object-path",
+            "url": "https://github.com/advisories/GHSA-8v63-cqqc-6r2c",
+            "severity": "high",
+            "range": "<0.11.8"
+          },
+          {
+            "source": 1002513,
+            "name": "object-path",
+            "dependency": "object-path",
+            "title": "Prototype Pollution in object-path",
+            "url": "https://github.com/advisories/GHSA-v39p-96qg-c8rf",
+            "severity": "moderate",
+            "range": "<0.11.6"
+          }
+        ],
+        "effects": [
+          "graphql-compose"
+        ],
+        "range": "<=0.11.7",
+        "nodes": [
+          "node_modules/object-path"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "pngquant": {
+        "name": "pngquant",
+        "severity": "moderate",
+        "via": [
+          "pngquant-bin"
+        ],
+        "effects": [],
+        "range": ">=0.3.0",
+        "nodes": [
+          "node_modules/pngquant"
+        ],
+        "fixAvailable": {
+          "name": "pngquant",
+          "version": "0.2.0",
+          "isSemVerMajor": true
+        }
+      },
+      "pngquant-bin": {
+        "name": "pngquant-bin",
+        "severity": "moderate",
+        "via": [
+          "bin-wrapper"
+        ],
+        "effects": [
+          "pngquant"
+        ],
+        "range": ">=1.0.0",
+        "nodes": [
+          "node_modules/pngquant-bin"
+        ],
+        "fixAvailable": {
+          "name": "pngquant",
+          "version": "0.2.0",
+          "isSemVerMajor": true
+        }
+      },
+      "postcss-color-function": {
+        "name": "postcss-color-function",
+        "severity": "moderate",
+        "via": [
+          "css-color-function"
+        ],
+        "effects": [],
+        "range": "*",
+        "nodes": [
+          "node_modules/postcss-color-function"
+        ],
+        "fixAvailable": false
+      },
+      "react-dev-utils": {
+        "name": "react-dev-utils",
+        "severity": "critical",
+        "via": [
+          "browserslist",
+          "fork-ts-checker-webpack-plugin",
+          "immer"
+        ],
+        "effects": [
+          "gatsby"
+        ],
+        "range": "6.0.0-next.03604a46 - 12.0.0-next.37",
+        "nodes": [
+          "node_modules/react-dev-utils"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "remark-parse": {
+        "name": "remark-parse",
+        "severity": "high",
+        "via": [
+          "trim"
+        ],
+        "effects": [
+          "gatsby-recipes"
+        ],
+        "range": "<=8.0.3",
+        "nodes": [
+          "node_modules/gatsby-recipes/node_modules/remark-parse"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "sanitize-html": {
+        "name": "sanitize-html",
+        "severity": "moderate",
+        "via": [
+          {
+            "source": 1002865,
+            "name": "sanitize-html",
+            "dependency": "sanitize-html",
+            "title": "Improper Input Validation in sanitize-html",
+            "url": "https://github.com/advisories/GHSA-rjqq-98f6-6j3r",
+            "severity": "moderate",
+            "range": "<2.3.1"
+          },
+          {
+            "source": 1002866,
+            "name": "sanitize-html",
+            "dependency": "sanitize-html",
+            "title": "Improper Input Validation in sanitize-html",
+            "url": "https://github.com/advisories/GHSA-mjxr-4v3x-q3m4",
+            "severity": "moderate",
+            "range": "<2.3.2"
+          }
+        ],
+        "effects": [
+          "gatsby-transformer-remark"
+        ],
+        "range": "<=2.3.1",
+        "nodes": [
+          "node_modules/sanitize-html"
+        ],
+        "fixAvailable": false
+      },
+      "semver-regex": {
+        "name": "semver-regex",
+        "severity": "moderate",
+        "via": [
+          {
+            "source": 1002465,
+            "name": "semver-regex",
+            "dependency": "semver-regex",
+            "title": "Regular Expression Denial of Service (ReDOS)",
+            "url": "https://github.com/advisories/GHSA-44c6-4v22-4mhx",
+            "severity": "moderate",
+            "range": "<3.1.3"
+          }
+        ],
+        "effects": [
+          "find-versions"
+        ],
+        "range": "<3.1.3",
+        "nodes": [
+          "node_modules/semver-regex"
+        ],
+        "fixAvailable": {
+          "name": "pngquant",
+          "version": "0.2.0",
+          "isSemVerMajor": true
+        }
+      },
+      "set-value": {
+        "name": "set-value",
+        "severity": "high",
+        "via": [
+          {
+            "source": 1002475,
+            "name": "set-value",
+            "dependency": "set-value",
+            "title": "Prototype Pollution in set-value",
+            "url": "https://github.com/advisories/GHSA-4jqc-8m5r-9rpr",
+            "severity": "high",
+            "range": "<4.0.1"
+          }
+        ],
+        "effects": [
+          "cache-base",
+          "union-value"
+        ],
+        "range": "<4.0.1",
+        "nodes": [
+          "node_modules/set-value"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "snapdragon": {
+        "name": "snapdragon",
+        "severity": "high",
+        "via": [
+          "base"
+        ],
+        "effects": [
+          "braces",
+          "expand-brackets",
+          "extglob",
+          "micromatch",
+          "nanomatch"
+        ],
+        "range": "0.6.0 - 0.10.1",
+        "nodes": [
+          "node_modules/snapdragon"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "string-width": {
+        "name": "string-width",
+        "severity": "moderate",
+        "via": [
+          "strip-ansi"
+        ],
+        "effects": [],
+        "range": "2.1.0 - 4.1.0",
+        "nodes": [
+          "node_modules/wide-align/node_modules/string-width"
+        ],
+        "fixAvailable": true
+      },
+      "strip-ansi": {
+        "name": "strip-ansi",
+        "severity": "moderate",
+        "via": [
+          "ansi-regex"
+        ],
+        "effects": [
+          "gatsby",
+          "gatsby-cli",
+          "string-width",
+          "yurnalist"
+        ],
+        "range": "4.0.0 - 5.2.0",
+        "nodes": [
+          "node_modules/gatsby-cli/node_modules/strip-ansi",
+          "node_modules/gatsby/node_modules/strip-ansi",
+          "node_modules/wide-align/node_modules/strip-ansi",
+          "node_modules/yurnalist/node_modules/strip-ansi"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "svgo": {
+        "name": "svgo",
+        "severity": "moderate",
+        "via": [
+          "css-select"
+        ],
+        "effects": [
+          "gatsby-plugin-sharp"
+        ],
+        "range": "1.0.0 - 1.3.2",
+        "nodes": [
+          "node_modules/svgo"
+        ],
+        "fixAvailable": {
+          "name": "gatsby-plugin-sharp",
+          "version": "2.0.30",
+          "isSemVerMajor": true
+        }
+      },
+      "trim": {
+        "name": "trim",
+        "severity": "high",
+        "via": [
+          {
+            "source": 1002775,
+            "name": "trim",
+            "dependency": "trim",
+            "title": "Regular Expression Denial of Service in trim",
+            "url": "https://github.com/advisories/GHSA-w5p7-h5w8-2hfq",
+            "severity": "high",
+            "range": "<0.0.3"
+          }
+        ],
+        "effects": [
+          "remark-parse"
+        ],
+        "range": "<0.0.3",
+        "nodes": [
+          "node_modules/trim"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "trim-newlines": {
+        "name": "trim-newlines",
+        "severity": "high",
+        "via": [
+          {
+            "source": 1002624,
+            "name": "trim-newlines",
+            "dependency": "trim-newlines",
+            "title": "Regular Expression Denial of Service in trim-newlines",
+            "url": "https://github.com/advisories/GHSA-7p7h-4mm5-852v",
+            "severity": "high",
+            "range": "<3.0.1"
+          }
+        ],
+        "effects": [
+          "meow"
+        ],
+        "range": "<3.0.1",
+        "nodes": [
+          "node_modules/trim-newlines"
+        ],
+        "fixAvailable": true
+      },
+      "union-value": {
+        "name": "union-value",
+        "severity": "high",
+        "via": [
+          "set-value"
+        ],
+        "effects": [
+          "cache-base"
+        ],
+        "range": "*",
+        "nodes": [
+          "node_modules/union-value"
+        ],
+        "fixAvailable": {
+          "name": "gatsby",
+          "version": "2.32.13",
+          "isSemVerMajor": true
+        }
+      },
+      "unist-util-select": {
+        "name": "unist-util-select",
+        "severity": "moderate",
+        "via": [
+          "nth-check"
+        ],
+        "effects": [
+          "gatsby-transformer-yaml"
+        ],
+        "range": "1.2.0 - 3.0.2",
+        "nodes": [
+          "node_modules/unist-util-select"
+        ],
+        "fixAvailable": {
+          "name": "gatsby-transformer-yaml",
+          "version": "1.0.1",
+          "isSemVerMajor": true
+        }
+      },
+      "ws": {
+        "name": "ws",
+        "severity": "moderate",
+        "via": [
+          {
+            "source": 1002635,
+            "name": "ws",
+            "dependency": "ws",
+            "title": "ReDoS in Sec-Websocket-Protocol header",
+            "url": "https://github.com/advisories/GHSA-6fc8-4gx4-v693",
+            "severity": "moderate",
+            "range": ">=7.0.0 <7.4.6"
+          }
+        ],
+        "effects": [
+          "@graphql-tools/url-loader"
+        ],
+        "range": "7.0.0 - 7.4.5",
+        "nodes": [
+          "node_modules/ws"
+        ],
+        "fixAvailable": true
+      },
+      "yurnalist": {
+        "name": "yurnalist",
+        "severity": "moderate",
+        "via": [
+          "strip-ansi"
+        ],
+        "effects": [],
+        "range": ">=1.0.5",
+        "nodes": [
+          "node_modules/yurnalist"
+        ],
+        "fixAvailable": true
+      }
+    },
+    "metadata": {
+      "vulnerabilities": {
+        "info": 0,
+        "low": 0,
+        "moderate": 28,
+        "high": 21,
+        "critical": 2,
+        "total": 51
+      },
+      "dependencies": {
+        "prod": 1875,
+        "dev": 38,
+        "optional": 153,
+        "peer": 0,
+        "peerOptional": 0,
+        "total": 2065
+      }
+    }
+  }
+}
