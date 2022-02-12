@@ -110,7 +110,7 @@ module.exports = {
                       frontmatter {
                         title
                         date
-                        auhor
+                        author
                       }
                     }
                   }
