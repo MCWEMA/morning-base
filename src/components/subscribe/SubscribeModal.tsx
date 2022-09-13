@@ -49,8 +49,7 @@ export class SubscribeModal extends React.Component<any, SubscribeState> {
           <SubscribeLogo />
           <SubscribeOverlayTitle>Subscribe to {config.title}</SubscribeOverlayTitle>
           <SubscribeOverlayDescription>
-            Stay up to date! Get all the latest &amp; greatest posts delivered straight to your
-            inbox
+            Stay connected &amp; Get posts diretly in your inbox!
           </SubscribeOverlayDescription>
           <SubscribeForm />
         </SubscribeOverlayContent>
@@ -195,7 +194,7 @@ const SubscribeOverlayContent = styled.div`
 const SubscribeOverlayTitle = styled.h1`
   display: inline-block;
   margin: 0 0 10px 0;
-  font-size: 5.2rem;
+  font-size: 3.75rem;
   line-height: 1.15em;
 `;
 
@@ -204,7 +203,7 @@ const SubscribeOverlayDescription = styled.p`
   max-width: 650px;
   color: #fff;
   font-family: Georgia, serif;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   line-height: 1.3em;
   font-weight: 300;
   opacity: 0.8;

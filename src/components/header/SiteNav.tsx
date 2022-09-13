@@ -11,6 +11,7 @@ import config from '../../website-config';
 import { Facebook } from '../icons/facebook';
 import { Twitter } from '../icons/twitter';
 import { SubscribeModal } from '../subscribe/SubscribeModal';
+import { ConnectModal } from '../connect/ConnectModal';
 import { SiteNavLogo } from './SiteNavLogo';
 
 interface SiteNavProps {
@@ -99,6 +100,15 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   <Link to="/connection" activeClassName="nav-current">Connection</Link>
                 </li>
                 <li role="menuitem">
+                  <Link to="/contacts" activeClassName="nav-current">Contacts</Link>
+                </li>
+                <li role="menuitem">
+                  <Link to="/Formuisample" activeClassName="nav-current">FMUI</Link>
+                </li>
+                 <li role="menuitem">
+                  <Link to="/Spreeconnect/" activeClassName="nav-current"> Spree </Link>
+                </li>
+                <li role="menuitem">
                   <Link to="/tags/getting-started/" activeClassName="nav-current"> Starts </Link>
                 </li>
               </ul>
@@ -116,7 +126,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   className="social-link-fb"
                   css={[SocialLink, SocialLinkFb]}
                   href={config.facebook}
-                  target="_blank"
+                  //target="_blank"
                   title="Facebook"
                   rel="noopener noreferrer"
                 >
@@ -128,7 +138,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   css={SocialLink}
                   href={config.twitter}
                   title="Twitter"
-                  target="_blank"
+                  //target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Twitter />
@@ -137,6 +147,9 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
             </SocialLinks>
             {config.showSubscribe && (
               <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
+            )}
+            {config.showConnect && (
+              <ConnectButton onClick={this.openModal}>Connect</ConnectButton>
             )}
           </SiteNavRight>
         </nav>
@@ -284,6 +297,25 @@ const SubscribeButton = styled.a`
     cursor: pointer;
   }
 `;
+
+
+const ConnectButton = styled.a`
+  display: block;
+  padding: 4px 10px;
+  margin: 0 0 0 10px;
+  border: #fff 1px solid;
+  color: #fff;
+  line-height: 1em;
+  border-radius: 10px;
+  opacity: 0.8;
+
+  :hover {
+    text-decoration: none;
+    opacity: 1;
+    cursor: pointer;
+  }
+`;
+
 
 const NavPostTitle = styled.span`
   visibility: hidden;
